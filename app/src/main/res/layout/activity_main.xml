@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main_drawerLayout_layout"
+    tools:context=".ui.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/activity_main_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="#E9E9E9"
+            >
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="头条"
+                android:clickable="true"
+                android:textSize="26sp"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="百科"
+                android:clickable="true"
+                android:textSize="26sp"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="资讯"
+                android:clickable="true"
+                android:textSize="26sp"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="经营"
+                android:clickable="true"
+                android:textSize="26sp"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="数据"
+                android:clickable="true"
+                android:textSize="26sp"
+                />
+            <ImageView
+                android:id="@+id/activity_main_open_menu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="moreSlidingMneu"
+                android:src="@drawable/more"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/activity_main_title_line"
+            android:layout_below="@id/activity_main_title_text"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="3dp">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00AA00"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:layout_weight="1"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:layout_weight="1"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:layout_weight="1"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:layout_weight="1"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <View
+            android:id="@+id/activity_main_baseline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/activity_main_title_line"
+            android:background="#00AA00"
+            />
+        <android.support.v4.view.ViewPager
+            android:layout_below="@id/activity_main_baseline"
+            android:id="@+id/activity_main_viewPagerId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/right_drawLayout_menu"
+        android:layout_gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/activity_main_close_menu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="moreSlidingMneu"
+                android:src="@drawable/searchbackbtn" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="茶百科" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/righttopbutton" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dip">
+
+            <ImageButton
+                android:id="@+id/imageButton_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:onClick="searchbtn"
+                android:background="@drawable/gosearch" />
+
+            <EditText
+                android:id="@+id/activity_main_searchEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/imageButton_search"
+                android:background="@drawable/myedit"
+                android:drawableLeft="@drawable/searchico"
+                android:hint="关键字"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="热门搜索：茶"
+            android:textColor="#ff999999"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shoucangjia"
+            android:paddingLeft="8dp"
+            android:text="收藏夹"
+            android:textColor="#ff999999" />
+
+        <TextView
+            android:id="@+id/textView_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:text="我的收藏"
+            android:clickable="true"
+            android:onClick="mycollectbtn"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:text="历史记录"
+            android:clickable="true"
+            android:onClick="myhistory"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shoucangjia"
+            android:paddingLeft="8dp"
+            android:text="关于"
+            android:textColor="#ff999999" />
+
+        <TextView
+            android:id="@+id/textView_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:text="版权信息"
+            android:clickable="true"
+            android:onClick="versionsbtn"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView_ider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:text="意见反馈"
+            android:clickable="true"
+            android:onClick="feedbackbtn"
+            android:textSize="15sp" />
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
