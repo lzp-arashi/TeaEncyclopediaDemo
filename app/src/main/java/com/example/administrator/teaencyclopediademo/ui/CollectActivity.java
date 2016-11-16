@@ -22,7 +22,6 @@ import com.example.administrator.teaencyclopediademo.adapter.HeadPagerAdapter;
 import com.example.administrator.teaencyclopediademo.bean.PageEntity;
 import com.example.administrator.teaencyclopediademo.util.MyDateBaseUtils;
 import com.example.administrator.teaencyclopediademo.util.MyMessagePage;
-import com.example.administrator.teaencyclopediademo.util.MySQLHelper;
 
 import java.util.List;
 
@@ -74,7 +73,7 @@ public class CollectActivity extends AppCompatActivity implements AdapterView.On
                                 Log.d("1608",id);
                                 mCurrData.remove(i);
                                 adapter.notifyDataSetChanged();
-                                sqLiteDatabase.delete(MySQLHelper.TABLE_NAME, "id = ?", new String[]{id});
+                                //sqLiteDatabase.delete(MySQLHelper.TABLE_NAME, "id = ?", new String[]{id});
                                 int count = listView.getChildCount();
                                 AnimationSet set = new AnimationSet(true);
                                 AlphaAnimation alphaAnimation = new AlphaAnimation(0,1);
