@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.example.administrator.teaencyclopediademo.R;
 import com.example.administrator.teaencyclopediademo.adapter.MainActivityAdapter;
+import com.example.administrator.teaencyclopediademo.animation.AccordionTransformer;
 import com.example.administrator.teaencyclopediademo.fragment.BaseFragment;
 import com.example.administrator.teaencyclopediademo.fragment.HeadPagerFragment;
 import com.example.administrator.teaencyclopediademo.fragment.OtherPageFragment;
@@ -71,6 +72,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(this);
         selecTab(0);
+        viewPager.setPageTransformer(true,new AccordionTransformer());
     }
     //呼出侧滑菜单
     public void moreSlidingMneu(View view) {
