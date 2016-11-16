@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,6 +21,8 @@ public class WelcomeActivity extends AppCompatActivity{
     private Timer timer;
     private int time=3;
     private final int MSG_WHAT = 10;
+    private Animation mAnimation;
+
     private Handler handler = new Handler(){
         @Override
         public void handleMessage(Message msg) {
@@ -64,5 +68,9 @@ public class WelcomeActivity extends AppCompatActivity{
                 handler.sendEmptyMessage(msg.what);
             }
         },0,1000);
+
+        mAnimation = AnimationUtils.loadAnimation(this,R.anim.translate);
+        mAnimation.setInterpolator(this,android.R.interpolator.bounce);
+        view.startAnimation(mAnimation);
     }
 }

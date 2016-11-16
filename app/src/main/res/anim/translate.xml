@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="2000"
+    android:fillAfter="false"
+    android:startOffset="1000"
+
+    >
+
+    <!--Ctrl+/ 移动动画,100% 移动自身的高度，100%p：移动父控件高度-->
+    <translate android:fromYDelta="-100%p" android:toYDelta="0"
+        android:repeatMode="reverse"
+        android:repeatCount="0"
+
+        />
+
+</set>
