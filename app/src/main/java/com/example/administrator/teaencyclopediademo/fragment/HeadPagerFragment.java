@@ -122,11 +122,11 @@ public class HeadPagerFragment extends BaseFragment implements AdapterView.OnIte
                             @Override
                             public void onAnimationEnd(Animation animation) {//结束
                                 //将数据删除，并且更新适配器
-                                data.remove(i-2);
+                                adapter.remove(i-2);
                                 //adapter.remove(i-2);
                                 Log.d("1608",data.toString());
                                 //刷新适配器
-                                adapter.notifyDataSetChanged();
+                                //adapter.notifyDataSetChanged();
                                 Log.d("1608",data.toString());
                                 int count = listView.getChildCount();
 

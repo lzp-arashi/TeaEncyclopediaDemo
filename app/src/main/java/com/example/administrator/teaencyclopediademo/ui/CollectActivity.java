@@ -22,6 +22,7 @@ import com.example.administrator.teaencyclopediademo.adapter.HeadPagerAdapter;
 import com.example.administrator.teaencyclopediademo.bean.PageEntity;
 import com.example.administrator.teaencyclopediademo.util.MyDateBaseUtils;
 import com.example.administrator.teaencyclopediademo.util.MyMessagePage;
+import com.example.administrator.teaencyclopediademo.util.MySQLHelper;
 
 import java.util.List;
 
@@ -31,6 +32,7 @@ public class CollectActivity extends AppCompatActivity implements AdapterView.On
     private HeadPagerAdapter adapter;
     private List<PageEntity.PageDetial> mCurrData;
     private SQLiteDatabase sqLiteDatabase;
+    private MySQLHelper mMySQLHelper;
 
     //private List<PageEntity.PageDetial> detials=new ArrayList<>();
     @Override
@@ -43,9 +45,14 @@ public class CollectActivity extends AppCompatActivity implements AdapterView.On
         listView.setOnItemClickListener(this);
         loadData();
 
+        mMySQLHelper = new MySQLHelper(this);
+        sqLiteDatabase = mMySQLHelper.getReadableDatabase();
+
+        Log.d("1608", "onCreate: "+sqLiteDatabase);
+
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, final View view, final int i, long l) {
+            public boolean onItemLongClick(final AdapterView<?> adapterView, final View view, final int i, long l) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(CollectActivity.this);
                 builder.setTitle("提示");
                 builder.setMessage("您是否要删除第"+(i+1)+"行");
@@ -71,9 +78,11 @@ public class CollectActivity extends AppCompatActivity implements AdapterView.On
                                 mCurrData = MyDateBaseUtils.getShuju();
                                 String id = mCurrData.get(i).getId();
                                 Log.d("1608",id);
-                                mCurrData.remove(i);
-                                adapter.notifyDataSetChanged();
-                                //sqLiteDatabase.delete(MySQLHelper.TABLE_NAME, "id = ?", new String[]{id});
+                                //mCurrData.remove(i);
+                                adapter.remove(i);
+                                Log.d("1608", "onAnimationEnd: "+MySQLHelper.TABLE_NAME);
+                                sqLiteDatabase.delete(MySQLHelper.TABLE_NAME, "id = ?", new String[]{id});
+                                //adapter.notifyDataSetChanged();
                                 int count = listView.getChildCount();
                                 AnimationSet set = new AnimationSet(true);
                                 AlphaAnimation alphaAnimation = new AlphaAnimation(0,1);

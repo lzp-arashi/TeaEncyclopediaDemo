@@ -20,12 +20,12 @@
         "source": "F:\\study\\TeaEncyclopediaDemo\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "F:\\study\\TeaEncyclopediaDemo\\slidingmenu\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_header_item_layout.xml",
-        "source": "F:\\study\\TeaEncyclopediaDemo\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_popup_menu_header_item_layout.xml"
-    },
-    {
         "merged": "F:\\study\\TeaEncyclopediaDemo\\slidingmenu\\build\\intermediates\\res\\merged\\release\\layout\\abc_dialog_title_material.xml",
         "source": "F:\\study\\TeaEncyclopediaDemo\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "F:\\study\\TeaEncyclopediaDemo\\slidingmenu\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "F:\\study\\TeaEncyclopediaDemo\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
         "merged": "F:\\study\\TeaEncyclopediaDemo\\slidingmenu\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media.xml",

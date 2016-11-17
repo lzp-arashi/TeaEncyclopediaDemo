@@ -49,4 +49,8 @@ public abstract class BaseListViewAdapter<T> extends BaseAdapter {
         datas.clear();
         notifyDataSetChanged();
     }
+    public void remove(int position){
+        datas.remove(position);
+        notifyDataSetChanged();
+    }
 }

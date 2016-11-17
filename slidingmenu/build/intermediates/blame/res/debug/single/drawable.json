@@ -88,12 +88,12 @@
         "source": "F:\\study\\TeaEncyclopediaDemo\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
-        "merged": "F:\\study\\TeaEncyclopediaDemo\\slidingmenu\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "F:\\study\\TeaEncyclopediaDemo\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_small_material.xml"
-    },
-    {
         "merged": "F:\\study\\TeaEncyclopediaDemo\\slidingmenu\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
         "source": "F:\\study\\TeaEncyclopediaDemo\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "F:\\study\\TeaEncyclopediaDemo\\slidingmenu\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "F:\\study\\TeaEncyclopediaDemo\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
         "merged": "F:\\study\\TeaEncyclopediaDemo\\slidingmenu\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",

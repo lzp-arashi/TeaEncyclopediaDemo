@@ -49,8 +49,4 @@ public class HeadPagerAdapter extends BaseListViewAdapter<PageEntity.PageDetial>
         }
     }
 
-    /*public void remove(int i){
-        PageEntity.PageDetial item=getItem(i);
-    }*/
-
 }

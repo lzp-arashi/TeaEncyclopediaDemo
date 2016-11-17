@@ -109,9 +109,9 @@ public class OtherPageFragment extends BaseFragment implements AdapterView.OnIte
 
                             @Override
                             public void onAnimationEnd(Animation animation) {
-                                detials.remove(i-1);
+                                adapter.remove(i-1);
                                 Log.d("1608",detials.toString());
-                                adapter.notifyDataSetChanged();
+                                //adapter.notifyDataSetChanged();
                                 Log.d("1608",detials.toString());
                                 int count = listView.getChildCount();
                                 AnimationSet set = new AnimationSet(true);
