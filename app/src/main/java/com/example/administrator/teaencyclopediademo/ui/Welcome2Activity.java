@@ -47,6 +47,7 @@ public class Welcome2Activity extends AppCompatActivity implements ViewPager.OnP
         welcomeViewPager.setAdapter(welcomePagerAdapter);
         welcomeViewPager.addOnPageChangeListener(this);
     }
+
     public void tiyanbtn(View view){
         startActivity( new Intent(Welcome2Activity.this,MainActivity.class));
         finish();
