@@ -36,6 +36,7 @@ public class HeadPagerAdapter extends BaseListViewAdapter<PageEntity.PageDetial>
         }else{
             viewHolder= (ViewHolder) view.getTag();
         }
+
         PageEntity.PageDetial item=getItem(i);
         viewHolder.title.setText(item.getTitle());
         viewHolder.description.setText(""+item.getDescription());
