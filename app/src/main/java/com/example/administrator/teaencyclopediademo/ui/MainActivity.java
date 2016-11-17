@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         BitmapUtils.getInstene().setImageCache(new MemoryImg(10<<20));
+        /*getSupportFragmentManager().beginTransaction()
+                .add(R.id.activity_main_relativeLayoutId,new HeadPagerFragment())
+                .commit();*/
         viewPager = ((ViewPager) findViewById(R.id.activity_main_viewPagerId));
         linearLayout = ((LinearLayout) findViewById(R.id.activity_main_title_line));
         title_Tab = ((LinearLayout) findViewById(R.id.activity_main_title_text));

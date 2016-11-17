@@ -38,7 +38,7 @@ public class SearchActivity extends AppCompatActivity {
         refreshListView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener2<ListView>() {
             @Override
             public void onPullDownToRefresh(PullToRefreshBase<ListView> refreshView) {
-                adapter.clear();
+                //adapter.clear();
                 detial.clear();
                 page=1;
                 loadDate(page,search);

@@ -69,7 +69,7 @@ public class HeadPagerFragment extends BaseFragment implements AdapterView.OnIte
         pullListView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener2<ListView>() {
             @Override
             public void onPullDownToRefresh(PullToRefreshBase<ListView> refreshView) {
-                adapter.clear();
+                //adapter.clear();
                 data.clear();
                 page = 1;
                 loadData(page);

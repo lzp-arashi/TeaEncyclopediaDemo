@@ -33,6 +33,7 @@ public class Welcome2Activity extends AppCompatActivity implements ViewPager.OnP
         pointList = new ArrayList<>();
         for (int i = 0; i < imgIds.length; i++) {
             ImageView imageView = new ImageView(this);
+            imageView.setScaleType(ImageView.ScaleType.FIT_XY);
             imageView.setImageResource(imgIds[i]);
             imgList.add(imageView);
             // 初始化点

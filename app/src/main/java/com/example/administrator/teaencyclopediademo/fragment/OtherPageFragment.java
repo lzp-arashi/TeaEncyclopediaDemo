@@ -70,7 +70,7 @@ public class OtherPageFragment extends BaseFragment implements AdapterView.OnIte
                     @Override
                     public void onPullDownToRefresh(PullToRefreshBase<ListView> refreshView) {
                         detials.clear();
-                        adapter.clear();
+                        //adapter.clear();
                         page = 1;
                         loadData(type,page);
                     }
