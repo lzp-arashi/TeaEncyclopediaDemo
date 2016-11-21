@@ -8,9 +8,6 @@ import com.example.administrator.teaencyclopediademo.fragment.BaseFragment;
 
 import java.util.List;
 
-/**
- * Created by Administrator on 2016/10/5.
- */
 public class TabFragmentUtils implements RadioGroup.OnCheckedChangeListener {
     private List<BaseFragment> fragments;
     private int containerLayout;

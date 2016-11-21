@@ -11,9 +11,6 @@ import com.example.administrator.teaencyclopediademo.bean.PageEntity;
 import com.example.administrator.teaencyclopediademo.util.BitmapUtils;
 import com.example.administrator.teaencyclopediademo.util.cache.impl.MyLruCache;
 
-/**
- * Created by Administrator on 2016/11/11.
- */
 public class HeadPagerAdapter extends BaseListViewAdapter<PageEntity.PageDetial>{
 
     private MyLruCache myLruCache;

@@ -254,6 +254,5 @@ public class HeadPagerFragment extends BaseFragment implements AdapterView.OnIte
         bundle.putSerializable("detial",detial);
         intent.putExtras(bundle);
         startActivity(intent);
-
     }
 }
