@@ -23,7 +23,7 @@ import com.example.administrator.teaencyclopediademo.util.BitmapUtils;
 import com.example.administrator.teaencyclopediademo.util.cache.impl.MemoryImg;
 
 import java.util.ArrayList;
-
+//提交测试
 public class MainActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener{
     private ViewPager viewPager;
     private LinearLayout linearLayout;
